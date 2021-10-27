@@ -10,7 +10,7 @@ name: Run Unit Test
 
 on:
   push:
-    branches: [action]
+    branches: [action-1]
 
 jobs:
   test:
@@ -25,7 +25,7 @@ jobs:
         with:
           node-version: '14'
           cache: 'npm'
-
+          cache-dependency-path: './package-lock.json'
       - run: npm install
 
       - name: Run Tests
