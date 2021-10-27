@@ -38,3 +38,6 @@ jobs:
 
       - name: Run Tests
         run: npm test
+        
+      - name: Run e2e
+        run: npm run e2e
